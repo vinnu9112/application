@@ -1,4 +1,5 @@
 const mongoose =  require("mongoose");
+mongoose.set('strictQuery', false);
 
 const mongoURI = "mongodb://localhost:27017/application-form"
 

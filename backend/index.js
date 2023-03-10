@@ -1,10 +1,12 @@
 const express = require('express');
+var cors = require('cors');
 
 const connectToMongo = require("./db");
 connectToMongo();
 
 const app = express();
 const port = 8080
+app.use(cors())
 // app.get('/', (req, res)=>{
 //     res.send("hello")
 // })
